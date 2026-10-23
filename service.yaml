@@ -1,14 +1,13 @@
-
 apiVersion: v1
 kind: Service
 metadata:
   name: petclinic-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
     app: petclinic
   ports:
-    - name: http
+    - protocol: TCP
       port: 8080
       targetPort: 8080
-      protocol: TCP
+      nodePort: 30647
