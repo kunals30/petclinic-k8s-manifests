@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: petclinic
-          image: 10.0.1.212:8082/spring-petclinic:15
+          image: 10.0.1.212:8082/spring-petclinic:16
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
